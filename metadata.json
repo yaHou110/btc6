@@ -1,0 +1,6 @@
+{
+  "name": "BTC6 Terminal",
+  "description": "High-precision provably fair 1-hour Bitcoin candle prediction platform and digital ticket ledger.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

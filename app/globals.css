@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    background-color: #10131a;
+    color: #e1e2eb;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+.font-mono {
+  font-family: var(--font-mono), monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.font-sans {
+  font-family: var(--font-sans), sans-serif;
+}
+
+/* Custom Cyber Glow & Glassmorphic Utilities */
+.cyan-glow {
+  box-shadow: 0 0 20px rgba(0, 242, 254, 0.25);
+}
+
+.cyan-glow-lg {
+  box-shadow: 0 0 35px rgba(0, 242, 254, 0.4);
+}
+
+.green-glow {
+  box-shadow: 0 0 20px rgba(0, 228, 117, 0.25);
+}
+
+.orange-glow {
+  box-shadow: 0 0 20px rgba(247, 147, 26, 0.25);
+}
+
+.ticket-scanline {
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(0, 242, 254, 0.03) 51%,
+    transparent 52%
+  );
+  background-size: 100% 4px;
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0e14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #272a31;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a494b;
+}
